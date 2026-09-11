@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Odds &amp; Endings — a cozy lost &amp; found</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+<div id="app">
+  <canvas id="stage"></canvas>
+
+  <div id="hud" class="hud" hidden>
+    <header class="topbar">
+      <button class="icon-btn" id="btn-menu" title="Menu" aria-label="Menu">&#9776;</button>
+      <div class="scene-title">
+        <h1 id="scene-name">&nbsp;</h1>
+        <p id="scene-sub">&nbsp;</p>
+      </div>
+      <div class="topbar-right">
+        <div class="chip" id="chip-timer"><span class="chip-ico">&#9201;</span><span id="timer">0:00</span></div>
+        <button class="icon-btn" id="btn-sound" title="Sound" aria-label="Toggle sound">&#9834;</button>
+      </div>
+    </header>
+
+    <div class="bubble-layer" id="bubble-layer"></div>
+
+    <footer class="dock">
+      <div class="dock-inner">
+        <button class="hint-btn" id="btn-hint" title="Use a wisp">
+          <span class="hint-ico" aria-hidden="true"></span>
+          <span class="hint-label">Wisp</span>
+          <em id="hint-count">3</em>
+        </button>
+        <div class="findstrip" id="findstrip"></div>
+        <div class="dock-right">
+          <div class="progress-ring" id="progress-ring"><span id="progress-text">0/0</span></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="overlay" class="overlay"></div>
+  <div id="toast" class="toast" hidden></div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

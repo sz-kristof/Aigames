@@ -1,0 +1,17 @@
+{
+  "name": "odds-and-endings",
+  "version": "1.0.0",
+  "description": "A cozy hand-drawn hidden-object world you can pan, zoom and poke at.",
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node tools/playtest.mjs",
+    "check": "node tools/check-finds.mjs",
+    "shots": "node tools/shots.mjs",
+    "build:artifact": "node tools/make-artifact.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  },
+  "license": "MIT"
+}
